@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ami-angular-proj": {
+      "hosting": {
+        "ami-angular-proj": [
+          "ami-angular-proj"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ami-angular-proj"
+  }
+}

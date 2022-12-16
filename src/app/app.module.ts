@@ -18,6 +18,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { PnfComponent } from './components/pnf/pnf.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PnfComponent } from './components/pnf/pnf.component';
     HomeComponent,
     RegisterComponent,
     SideBarComponent,
-    PnfComponent
+    PnfComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

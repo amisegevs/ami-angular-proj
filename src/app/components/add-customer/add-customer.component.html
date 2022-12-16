@@ -1,37 +1,34 @@
-<form #addCustomer="ngForm" (ngSubmit)="addNewCustomer()">
+<div class="bg">
+  <form #addCustomer="ngForm" (ngSubmit)="addNewCustomer()">
     <h4>Add new customer record</h4>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">First Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="Enter First Name"
-        name="firstName"
-        [(ngModel)]="customer.firstName"
-        #firstName="ngModel"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-      <input
-        type="text"
-        class="form-control"
-        id="exampleFormControlInput1"
-        placeholder="Enter Last Name"
-        name="lastName"
-        [(ngModel)]="customer.lastName"
-        #lastName="ngModel"
-        required
-      />
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+
+    <div class="row mb-3">
+      <div class="col-2">
         <input
           type="text"
           class="form-control"
-          id="exampleFormControlInput1"
+          placeholder="Enter First Name"
+          name="firstName"
+          [(ngModel)]="customer.firstName"
+          #firstName="ngModel"
+          required
+        />
+      </div>
+      <div class="col-2">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Last Name"
+          name="lastName"
+          [(ngModel)]="customer.lastName"
+          #lastName="ngModel"
+          required
+        />
+      </div>
+      <div class="col-2">
+        <input
+          type="text"
+          class="form-control"
           placeholder="Enter phone"
           name="phone"
           [(ngModel)]="customer.phone"
@@ -39,12 +36,10 @@
           required
         />
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <div class="col-3">
         <input
           type="text"
           class="form-control"
-          id="exampleFormControlInput1"
           placeholder="Enter Email"
           name="email"
           [(ngModel)]="customer.email"
@@ -52,5 +47,10 @@
           required
         />
       </div>
-      <button class="btn btn-success" type="submit">+Add Customer</button>
-    </form>
+
+      <div class="col-3">
+        <button class="btn btn-success" type="submit">+Add Customer</button>
+      </div>
+    </div>
+  </form>
+</div>

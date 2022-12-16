@@ -1,0 +1,9 @@
+.home-page {
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+* {
+  background-color: aquamarine;
+}

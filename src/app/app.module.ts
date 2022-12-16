@@ -16,6 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { PnfComponent } from './components/pnf/pnf.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { RegisterComponent } from './components/register/register.component';
     ShowCustomersComponent,
     NavbarComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    SideBarComponent,
+    PnfComponent
   ],
   imports: [
     BrowserModule,

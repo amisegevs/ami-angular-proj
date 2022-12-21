@@ -49,4 +49,10 @@ export class CustomersService {
     let customerRef = doc(this.firestore, `customers/${id}`);
     return docData(customerRef, {idField: "id"}) as Observable<Customer>;
   }
+
+  // no customer in the search
+  noCustomer(customer: Customer) {
+    let customerRef = doc(this.firestore, `customers/${customer.id}`);
+    return docData(customerRef, {idField: "id"}) as Observable<Customer>;
+  }
 }

@@ -19,6 +19,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { PnfComponent } from './components/pnf/pnf.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchEmployeeComponent } from './components/search-employee/search-employee.component';
+import { SearchCustomerComponent } from './components/search-customer/search-customer.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { EmployeePipe } from './pipes/employee.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { FooterComponent } from './components/footer/footer.component';
     RegisterComponent,
     SideBarComponent,
     PnfComponent,
-    FooterComponent
+    FooterComponent,
+    SearchEmployeeComponent,
+    SearchCustomerComponent,
+    FilterPipe,
+    EmployeePipe,
   ],
   imports: [
     BrowserModule,

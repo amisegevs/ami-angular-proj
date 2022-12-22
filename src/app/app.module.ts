@@ -23,6 +23,7 @@ import { SearchEmployeeComponent } from './components/search-employee/search-emp
 import { SearchCustomerComponent } from './components/search-customer/search-customer.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { EmployeePipe } from './pipes/employee.pipe';
+import { ShowEmployeesComponent } from './components/show-employees/show-employees.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { EmployeePipe } from './pipes/employee.pipe';
     SearchCustomerComponent,
     FilterPipe,
     EmployeePipe,
+    ShowEmployeesComponent,
   ],
   imports: [
     BrowserModule,

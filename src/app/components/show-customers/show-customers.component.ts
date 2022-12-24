@@ -38,5 +38,4 @@ export class ShowCustomersComponent implements OnInit {
     modalRef.componentInstance.id = customer.id;
   }
 
-
 }

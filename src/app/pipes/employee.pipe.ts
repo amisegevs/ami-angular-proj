@@ -19,5 +19,4 @@ export class EmployeePipe implements PipeTransform {
      return filteredEmployees
     }
 
-
 }

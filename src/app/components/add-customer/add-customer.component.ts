@@ -29,5 +29,4 @@ export class AddCustomerComponent implements OnInit {
     this.customer = {firstName: "", lastName: "", phone: "", email: ""}
   }
 
-
 }
